@@ -5,6 +5,74 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Smart Educational Glasses</title>
     <link rel="stylesheet" href="style.css">
+    <style>
+        /* Basic styling with added color */
+        body, html {
+            margin: 0;
+            padding: 0;
+            font-family: Arial, sans-serif;
+            background-color: #f0f3f5; /* Light grey background for a subtle look */
+        }
+        .container {
+            max-width: 1200px;
+            margin: auto;
+            padding: 20px;
+        }
+        .main-header, .main-nav, .main-footer {
+            text-align: center;
+            padding: 20px;
+            background-color: #007bff; /* Deep blue for header, nav, and footer */
+            color: white; /* White text for better readability */
+        }
+        .main-nav ul {
+            list-style: none;
+            padding: 0;
+        }
+        .main-nav ul li {
+            display: inline;
+            margin: 0 10px;
+        }
+        .main-nav ul li a {
+            text-decoration: none;
+            color: white; /* White text links */
+        }
+        .btn {
+            display: inline-block;
+            padding: 10px 20px;
+            background-color: #0056b3; /* Slightly darker blue for buttons */
+            color: white;
+            text-decoration: none;
+        }
+        section {
+            margin-bottom: 20px;
+        }
+        section#hero {
+            text-align: center;
+        }
+        section div {
+            display: flex;
+            justify-content: space-around;
+        }
+        section div div {
+            flex-basis: 30%;
+            background-color: #ffffff; /* White background for feature cards */
+            box-shadow: 0 4px 8px 0 rgba(0,0,0,0.2); /* Adding some shadow to lift the cards off the page */
+            border-radius: 5px; /* Rounded corners for a modern look */
+            padding: 20px; /* Spacing inside the cards */
+            margin: 10px; /* Spacing between cards */
+        }
+        img {
+            max-width: 100%;
+            height: auto;
+            border-radius: 5px; /* Rounded corners for images too */
+        }
+        section#benefits ul {
+            padding-left: 20px; /* Proper indentation for the list */
+        }
+        section#benefits li {
+            margin-bottom: 10px; /* Spacing between list items */
+        }
+    </style>
 </head>
 <body>
     <header class="main-header">
@@ -19,34 +87,33 @@
             <ul>
                 <li><a href="#features">Features</a></li>
                 <li><a href="#benefits">Benefits</a></li>
-                <li><a href="#demo">Demo</a></li>
                 <li><a href="#contact">Contact</a></li>
             </ul>
         </div>
     </nav>
 
     <section id="hero" class="container">
-        <!-- Place an actual image URL for the hero image -->
-        <img src="smart_educational_glasses_hero_image.jpg" alt="Students using Smart Educational Glasses">
-        <a href="#demo" class="btn">See It In Action</a>
+        <img src="image_main.jpg" alt="Students using Smart Educational Glasses" width="200" height="200">
     </section>
 
-    <section id="features" class="container">
+    <!-- Your sections continue here... -->
+
+<section id="features" class="container">
         <h2>Features</h2>
         <div>
             <!-- Replace these features with the specific ones from the MVP -->
             <div>
-                <img src="feature_voice_commands.jpg" alt="Voice Commands">
+                <img src="image1.jpg" alt="Voice Commands" width="100" height="100">
                 <h3>Simple Voice Commands</h3>
                 <p>Control your glasses hands-free for a seamless learning experience.</p>
             </div>
             <div>
-                <img src="feature_study_mode.jpg" alt="Study Mode">
+                <img src="image2.jpg" alt="Study Mode" width="100" height="100">
                 <h3>Study Mode</h3>
                 <p>Minimize distractions by blocking non-educational notifications during study times.</p>
             </div>
             <div>
-                <img src="feature_virtual_classroom.jpg" alt="Virtual Classroom">
+                <img src="image3.jpg" alt="Virtual Classroom" width="100" height="100">
                 <h3>Virtual Classroom Integration</h3>
                 <p>Attend live classes, access lectures, and participate in discussions directly through your glasses.</p>
             </div>
@@ -63,35 +130,18 @@
         </ul>
     </section>
 
-    <section id="demo" class="container">
-        <h2>Demo</h2>
-        <!-- Replace with an actual YouTube video ID -->
-        <iframe width="560" height="315" src="https://www.youtube.com/embed/YOUR_VIDEO_ID" frameborder="0" allow="autoplay; encrypted-media" allowfullscreen></iframe>
-    </section>
-
+   
     <section id="contact" class="container">
         <h2>Contact Us</h2>
         <p>For more information or inquiries, reach out to us at:</p>
         <p>Email: info@smarteducationalglasses.edu</p>
     </section>
 
+
     <footer class="main-footer">
         <div class="container">
             <p>© 2024 Smart Educational Glasses. All rights reserved.</p>
         </div>
     </footer>
-
-    <style>
-        /* Basic styling for demonstration */
-        body, html { margin: 0; padding: 0; font-family: Arial, sans-serif; }
-        .container { max-width: 1200px; margin: auto; padding: 20px; }
-        .main-header, .main-nav, .main-footer { text-align: center; padding: 20px; background-color: #f4f4f4; }
-        .main-nav ul { list-style: none; padding: 0; }
-        .main-nav ul li { display: inline; margin: 0 10px; }
-        .main-nav ul li a { text-decoration: none; }
-        .btn { display: inline-block; padding: 10px 20px; background-color: #007bff; color: white; text-decoration: none; }
-        section { margin-bottom: 20px; }
-        section#hero { text-align: center; }
-        section div { display: flex; justify-content: space-around; }
-        section div div { flex-basis: 30%; }
-        img { max-width
+</body>
+</html>
